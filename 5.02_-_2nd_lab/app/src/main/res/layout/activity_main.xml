@@ -1,0 +1,20 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/buttonFirstActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Первая активность" />
+
+    <Button
+        android:id="@+id/buttonSecondActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вторая активность"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

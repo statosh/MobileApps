@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/buttonYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Желтый" />
+
+    <Button
+        android:id="@+id/buttonBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Синий" />
+
+    <Button
+        android:id="@+id/buttonRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Красный" />
+
+    <Button
+        android:id="@+id/buttonGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Зелёный" />
+
+</LinearLayout>
