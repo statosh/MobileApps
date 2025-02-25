@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <!-- Верхние кнопки -->
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/buttonRight"
+        android:text="Left 50%">
+
+    </Button>
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/buttonLeft"
+        android:text="Right 50%" >
+
+    </Button>
+
+    <!-- Центральные кнопки -->
+    <LinearLayout
+        android:id="@+id/centerButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCenterLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center_left" >
+
+        </Button>
+
+        <Button
+            android:id="@+id/buttonCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center" >
+
+        </Button>
+
+        <Button
+            android:id="@+id/buttonCenterRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Center_right" >
+
+        </Button>
+    </LinearLayout>
+
+
+    <!-- Нижняя кнопка -->
+    <Button
+        android:id="@+id/buttonBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Bottom">
+
+    </Button>
+</RelativeLayout>
