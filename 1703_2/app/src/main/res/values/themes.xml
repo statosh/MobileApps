@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="MyAppTheme.Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#000000</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+
+    <style name="Theme._1703_2" parent="Base.Theme._1703_2" />
+</resources>

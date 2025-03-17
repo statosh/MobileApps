@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_text">Введите текст:</string>
+    <string name="entry_hint">Поле ввода</string>
+    <string name="app_name"> HelloAndroidWorld </string>
+</resources>
