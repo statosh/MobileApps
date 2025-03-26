@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Movie Storage</string>
+    <string name="title">ХРАНИЛИЩЕ ФИЛЬМОВ</string>
+    <string name="add_section_title">Добавление фильма</string>
+    <string name="movie_title_hint">Название фильма</string>
+    <string name="genre_hint">Жанр</string>
+    <string name="release_year_hint">Год выхода</string>
+    <string name="add_button">ДОБАВИТЬ ФИЛЬМ</string>
+    <string name="search_section_title">Поиск фильма</string>
+    <string name="search_button">НАЙТИ</string>
+    <string name="search_result_hint">Результаты поиска появятся здесь</string>
+</resources>

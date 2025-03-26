@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="add_button_color">#26A69A</color>
+    <color name="search_button_color">#AB47BC</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_color">#000000</color>
+</resources>
