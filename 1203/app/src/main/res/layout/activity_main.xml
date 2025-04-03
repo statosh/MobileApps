@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя кошечки"/>
+
+    <EditText android:id="@+id/editTextField1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Порода"/>
+
+    <EditText android:id="@+id/editTextField2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Цвет"/>
+
+    <Button android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить"/>
+
+    <Button android:id="@+id/buttonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Посмотреть"/>
+
+    <Button android:id="@+id/buttonRename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Переименовать"/>
+
+    <Button android:id="@+id/buttonDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Удалить"/>
+
+</LinearLayout>
