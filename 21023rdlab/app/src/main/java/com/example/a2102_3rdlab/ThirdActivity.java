@@ -16,7 +16,7 @@ public class ThirdActivity extends Activity {
 
         Button button = findViewById(R.id.buttonChangeColor);
         button.setOnClickListener(v -> {
-            button.setBackgroundColor(Color.parseColor("#90EE90")); // Светло-зелёный
+            button.setBackgroundColor(Color.parseColor("#90EE90"));
             isGreen = true;
 
             new Handler().postDelayed(() -> {
@@ -24,7 +24,7 @@ public class ThirdActivity extends Activity {
                     button.setBackgroundResource(R.drawable.button_border);
                     isGreen = false;
                 }
-            }, 2000); // 2 секунды
+            }, 2000);
         });
     }
 }
