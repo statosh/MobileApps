@@ -14,7 +14,6 @@ import java.util.Locale;
 public class CatDatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "cats.db";
     private static final int DATABASE_VERSION = 1;
-
     private static final String TABLE_CATS = "cats";
     private static final String COLUMN_ID = "_id";
     private static final String COLUMN_NAME = "name";
