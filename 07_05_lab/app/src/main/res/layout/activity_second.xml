@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewSoundName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Название звука"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/buttonSound1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звук 1"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/buttonSound2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звук 2"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/buttonSound3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звук 3"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/buttonSound4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звук 4"
+        android:layout_margin="8dp" />
+
+    <Button
+        android:id="@+id/buttonSound5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звук 5"
+        android:layout_margin="8dp" />
+</LinearLayout>
