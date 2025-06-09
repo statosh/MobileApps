@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp">
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Первый фрагмент"/>
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Поле 1"/>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Поле 2"/>
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Поле 3"/>
+
+    <Button
+        android:id="@+id/btnSendToSecondFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Отправить на второй фрагмент"/>
+</LinearLayout>
