@@ -1,64 +1,52 @@
 package com.example.a1404;
 
 public class Calculator {
-
-    private String currentNumber = "";
-    private double firstNumber = 0;
-    private double secondNumber = 0;
-    private String curOperation = "";
-    private boolean isNewOperation = true;
-    private double result;
+    private String firstNumber = "";
+    private String secondNumber = "";
+    private String operation = "";
 
     public void appendNumber(String number) {
-        if (isNewOperation) {
-            currentNumber = "";
-            isNewOperation = false;
+        if (operation.isEmpty()) {
+            firstNumber += number;
+        } else {
+            secondNumber += number;
         }
-        currentNumber += number;
     }
 
-    public void setOperation(String operation) {
-        if (!(currentNumber.isEmpty())) {
-            firstNumber = Double.parseDouble(currentNumber);
-            curOperation = operation;
-            currentNumber = "";
-        }
+    public void setOperation(String op) {
+        operation = op;
     }
 
     public String calculateResult() {
-        if (!(curOperation.isEmpty()) && !(currentNumber.isEmpty()) && firstNumber != 0) {
-            secondNumber = Double.parseDouble(currentNumber);
-            switch (curOperation) {
+        try {
+            double num1 = Double.parseDouble(firstNumber);
+            double num2 = Double.parseDouble(secondNumber);
+
+            switch (operation) {
                 case "+":
-                    result = firstNumber + secondNumber;
-                    break;
+                    return String.valueOf(num1 + num2);
                 case "-":
-                    result = firstNumber - secondNumber;
-                    break;
+                    return String.valueOf(num1 - num2);
                 case "*":
-                    result = firstNumber * secondNumber;
-                    break;
+                    return String.valueOf(num1 * num2);
                 case "/":
-                    if (secondNumber == 0) { return "Error"; }
-                    result = firstNumber / secondNumber;
-                    break;
+                    if (num2 == 0) return "Error";
+                    return String.valueOf(num1 / num2);
+                default:
+                    return "Error";
             }
-            curOperation = "";
-            isNewOperation = true;
-            currentNumber = String.valueOf(result);
-            return currentNumber;
+        } catch (NumberFormatException e) {
+            return "Error";
         }
-        return currentNumber.isEmpty() ? "0" : currentNumber;
     }
-    public String getCurrentNumber() {
-        return currentNumber.isEmpty() ? "0" : currentNumber;
+
+    public void reset() {
+        firstNumber = "";
+        secondNumber = "";
+        operation = "";
     }
-    public void clear() {
-        currentNumber = "";
-        curOperation = "";
-        firstNumber = 0;
-        secondNumber = 0;
-        result = 0;
-        isNewOperation = true;
-    }
+
+    public String getFirstNumber() { return firstNumber; }
+    public String getSecondNumber() { return secondNumber; }
+    public String getOperation() { return operation; }
 }
